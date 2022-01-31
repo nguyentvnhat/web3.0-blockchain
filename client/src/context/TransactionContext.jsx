@@ -12,13 +12,6 @@ const getEthereumContract = () => {
     const signer  = provider.getSigner();
     const transactionContract = new ethers.Contract(contractAddress, contractABI, signer);
 
-    // send etherum successfully
-    // console.log({
-    //     provider,
-    //     signer,
-    //     transactionContract
-    // });
-
     return transactionContract;
 }
 
